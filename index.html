@@ -1,1 +1,68 @@
-<h1>hello web club</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management System</title>
+    <link rel="stylesheet" href="Styles.css">
+  </head>
+ <body>
+   <link src="javascipt" href="sss.js"> 
+    <div class="logo">
+            <h1>Hotel Management System</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="hero">
+            <h2>Welcome to Our Hotel</h2>
+            <p>Experience luxury and comfort combined with delicious cuisine.</p>
+        </div>
+    </section>
+    <section id="menu" class="menu-section">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+            <div class="veg">
+                <h3>Vegetarian</h3>
+                    <li>Paneer Butter Masala (Price:Rs.100)</li>
+                    <input type="number" id="paneerbuttermasalaqty" value="0" min="0">
+                    <li>Veg Biryani (Price:Rs.220)</li>
+                    <input type="number" id="egbiryaniqty" value="0" min="0">
+                    <li>Palak Paneer (Price:Rs.120)</li>
+                    <input type="number" id="palakpaneerqty" value="0" min="0">
+                    <li>Dal Tadka (Price:Rs.150)</li>
+                    <input type="number" id="daltadkaqty" value="0" min="0">
+            </div>
+            <div class="non-veg">
+                <h3>Non-Vegetarian</h3>
+                    <li>Chicken Curry (Price:Rs.260)</li>
+                    <input type="number" id="chickencurryqty" value="0" min="0">
+                    <li>Mutton Biryani (Price:Rs.350)</li>
+                    <input type="number" id="muttonbiryaniqty" value="0" min="0">
+                    <li>Fish Fry (Price:Rs.299)</li>
+                    <input type="number" id="fishfryqty" value="0" min="0">
+                    <li>Egg Curry (Price:Rs.120)</li>
+                    <input type="number" id="eggcurryqty" value="0" min="0">
+            </div>
+        </div><br>
+        <button onclick="calculateTotal()">Place Order</button>
+        <h3>Total Bill Amount: RS<span id="totalbillAmount">0</span></h3>
+    </section>
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@hotelmanagement.com | Phone: +91 9876543210</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://x.com/?lang=en">Twitter</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+        </div>
+    </footer>
+ </body>
+</html>
