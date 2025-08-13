@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Personal Portfolio Website</title>
+    <!----CSS link----->
+    <link rel="stylesheet" href="pf_style.css" />
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    
+  </head>
+  <body>
+    <div class="hero">
+      <nav>
+        <span class="logo">S</span>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="https://github.com/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+        <a href="final.pdf" class="btn">Resume</a>
+      </nav>
+
+      <div class="main-section">
+        <div class="content" id="home">
+          <span class="title">Freelance Web Developer</span>
+          <h1>Hello, I’m <span>shruti</span></h1>
+          <p>
+            I’m working on a professional, visually sophisticated and
+            technologically proficient, responsive and multi-functional React
+            Components.
+          </p>
+          <a href="#" class="btn">Download CV</a>
+        </div>
+        <!-- Profile image at the right side with space -->
+        <img src="profile.jpg" alt="Profile Image" class="profile-img" />
+      </div>
+    </div>
+
+    <!-- Example sections for navigation -->
+    <section id="about"></section>
+    <section id="service"></section>
+    <section id="portfolio"></section>
+    <section id="blog"></section>
+    <section id="contact"></section>
+
+    <!-- Smooth scroll script -->
+    <script>
+      document.querySelectorAll('nav ul li a').forEach(link => {
+        link.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href.startsWith('#')) {
+            e.preventDefault();
+            document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
